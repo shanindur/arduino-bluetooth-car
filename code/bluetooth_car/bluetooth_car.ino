@@ -78,11 +78,37 @@ void loop() {
 
   else if(r == '5'){     
     moveStop();
+    goForward = 0;
   }
 
   else if(r == '6'){  
     r = '6';   
     enjoy();
+  }
+  else if(r == '7'){  
+    r = '0';   
+    turnLeft();
+    turnLeft();
+  }
+   else if(r == '8'){  
+    r = '0';
+    turnRight();
+    turnRight();
+       
+  }
+   else if(r == '9'){  
+    r = '0'; 
+    turnLeft();
+    turnLeft();
+    turnLeft();
+    turnLeft();  
+  }
+   else if(r == 'a'){  
+    r = '0';  
+    turnRight();
+    turnRight();
+    turnRight();
+    turnRight(); 
   }
 
 }
@@ -109,7 +135,7 @@ void loop() {
     digitalWrite(IN1, LOW);
     digitalWrite(IN3, HIGH);
     digitalWrite(IN4, LOW);
-    delay(150);
+    delay(120);
     moveStop();
    }
 
@@ -119,7 +145,7 @@ void loop() {
     digitalWrite(IN1, HIGH);
     digitalWrite(IN2, LOW);
     digitalWrite(IN3, LOW);
-    delay(150);
+    delay(120);
     moveStop();
    }
 
